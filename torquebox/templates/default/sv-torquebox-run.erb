@@ -1,0 +1,3 @@
+#!/bin/sh
+exec 2>&1
+exec /opt/torquebox-<%= @node[:torquebox][:version] %>-bin/jboss/bin/run.sh -b 0.0.0.0
